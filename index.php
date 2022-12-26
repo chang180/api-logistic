@@ -23,7 +23,16 @@
         <li>
             <a href="./printLabel/printLabel.php">列印寄貨標籤</a>
         </li>
+        <li>
+            <a href="./queryShipment/queryShipment.php">查詢物流寄件單資訊</a>
+        </li>
+        <li>
+            <a href="./modifyShipment/modifyShipment.php">修改物流寄件單</a>
+        </li>
+        <li>
+            <a href="./trace/trace.php">貨態歷程追蹤</a>
+        </li>
     </ul>
-    <!-- <a href="api-logistic.zip" download>下載檔案</a> -->
+    <a href="api-logistic.zip" download>下載檔案</a>
 </body>
 </html>

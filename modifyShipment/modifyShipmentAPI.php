@@ -4,11 +4,6 @@ $mid = $_POST['UID_'];
 $key = $_POST['key'];
 $iv = $_POST['iv'];
 $url = $_POST['url'];
-//remove empty values
-$_POST['MerchantOrderNo'] = array_filter($_POST['MerchantOrderNo'], function ($value) {
-    return $value !== '';
-});
-$TEST = $_POST;
 unset($_POST['key'], $_POST['iv'], $_POST['url']);
 
 $data1 = json_encode($_POST);
@@ -53,7 +48,7 @@ $hash = strtoupper(hash("sha256", $hashs));
     </pre>
     </fieldset>
 
-    <form action="getShipmentNoResult.php" method="post">
+    <form action="modifyShipmentResult.php" method="post">
     <input type="hidden" name="url" value="<?= $url; ?>">
         <fieldset>
             <legend>Post 參數</legend>
@@ -93,7 +88,7 @@ $hash = strtoupper(hash("sha256", $hashs));
             </table>
         </fieldset>
     </form>
-    <a href="getShipmentNo.php">回上一頁</a>
+    <a href="queryShipment.php">回上一頁</a>
 </body>
 
 </html>

@@ -12,44 +12,17 @@
     <div class="container">
         <!--取寄件單號 -->
         <h1>API 範例</h1>
-            <form action="getShipmentNoAPI.php" method="post">
+            <form action="queryShipmentAPI.php" method="post">
                 <fieldset>
                     <legend>參數輸入</legend>
                     <table border="1">
                         <tr>
                             <td>API網址：</td>
-                            <td><input name="url" value="https://ccore.newebpay.com/API/Logistic/getShipmentNo" size="60" required><span style="color:red;">※必填</span></td>
+                            <td><input name="url" value="https://ccore.newebpay.com/API/Logistic/queryShipment" size="60" required><span style="color:red;">※必填</span></td>
                         </tr>
                         <tr>
-                            <td rowspan="10">商店訂單編號</td>
-                            <td><input name="MerchantOrderNo[]" maxlength="30" required><span style="color:red;">※必填，一次最多10筆</span></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="MerchantOrderNo[]" maxlength="30"></td>
+                            <td>商店訂單編號</td>
+                            <td><input name="MerchantOrderNo" maxlength="30" required><span style="color:red;">※必填</span></td>
                         </tr>
                         <tr>
                             <td>串接程式版本</td>

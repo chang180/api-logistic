@@ -84,7 +84,7 @@ function curl_($curl_str = '', $curl_url)
             <?php print_r($result); ?>
         </pre>
     </fieldset>
-    <a href="getShipmentNo.php">回本頁</a>
+    <a href="queryShipment.php">回本頁</a>
 </body>
 
 </html>
