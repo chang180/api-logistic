@@ -58,7 +58,7 @@
                         </tr>
                         <tr>
                             <td>選取地圖後返回商店網址</td>
-                            <td><input name="ReturnURL" maxlength="50"><span style="color:red;">※必填</span></td>
+                            <td><input name="ReturnURL"><span style="color:red;">※必填</span></td>
                         </tr>
                         <tr>
                             <td>額外資料(選填)</td>
